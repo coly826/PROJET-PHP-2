@@ -1,0 +1,11 @@
+body{
+   color: red;
+   background-color: orange;
+}
+.div2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vb;
+   
+}
