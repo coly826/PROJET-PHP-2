@@ -17,7 +17,7 @@
       "api/dashboard.php": {
         "runtime": "vercel-php@0.4.0"
       },
-      "api/db.php.php": {
+      "api/dbphp": {
         "runtime": "vercel-php@0.4.0"
       },
       "api/check_stock.php": {
