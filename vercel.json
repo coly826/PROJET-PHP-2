@@ -1,43 +1,47 @@
 {
     "version": 2,
     "routes": [
-      { "src": "/check_stock.php", "dest": "/check_stock.php" },
-      { "src": "/add_product.php", "dest": "/add_product.php" },
-      { "src": "/dashboard.php", "dest": "/dashboard.php" },
-      { "src": "/(.*)", "dest": "/dashboard.php" },
-      { "src": "/authenticate.php", "dest": "/authenticate.php" },
-      { "src": "/deconnexion.php", "dest": "/deconnexion.php" },
-      { "src": "/login.php", "dest": "/login.php" },
-      { "src": "/logout.php", "dest": "/logout.php" },
-      { "src": "/register.php", "dest": "/register.php" },
-      { "src": "remove_product.php", "dest": "/remove_product.php" }
+      { "src": "/check_stock", "dest": "/api/check_stock.php" },
+      { "src": "/add_product", "dest": "/api/add_product.php" },
+      { "src": "/dashboard", "dest": "/api/dashboard.php" },
+      { "src": "/authenticate", "dest": "/api/authenticate.php" },
+      { "src": "/deconnexion", "dest": "/api/deconnexion.php" },
+      { "src": "/login", "dest": "/api/login.php" },
+      { "src": "/logout", "dest": "/api/logout.php" },
+      { "src": "/register", "dest": "/api/register.php" },
+      { "src": "/remove_product", "dest": "/api/remove_product.php" },
+      { "src": "/db.php", "dest": "/api/db.php" },
+      { "src": "/(.*)", "dest": "/api/dashboard.php" }
     ],
     "functions": {
-      "dashboard.php": {
+      "api/dashboard.php": {
         "runtime": "vercel-php@0.4.0"
       },
-      "check_stock.php": {
+      "api/db.php.php": {
         "runtime": "vercel-php@0.4.0"
       },
-      "authenticate.php": {
+      "api/check_stock.php": {
         "runtime": "vercel-php@0.4.0"
       },
-      "add_product.php": {
+      "api/authenticate.php": {
         "runtime": "vercel-php@0.4.0"
       },
-      "remove_product.php": {
+      "api/add_product.php": {
         "runtime": "vercel-php@0.4.0"
       },
-      "register.php": {
+      "api/remove_product.php": {
         "runtime": "vercel-php@0.4.0"
       },
-      "login.php": {
+      "api/register.php": {
         "runtime": "vercel-php@0.4.0"
       },
-      "deconnexion.php": {
+      "api/login.php": {
         "runtime": "vercel-php@0.4.0"
       },
-      "logout.php": {
+      "api/deconnexion.php": {
+        "runtime": "vercel-php@0.4.0"
+      },
+      "api/logout.php": {
         "runtime": "vercel-php@0.4.0"
       }
     }
