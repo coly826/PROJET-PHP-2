@@ -1,0 +1,44 @@
+{
+    "version": 2,
+    "routes": [
+      { "src": "/check_stock.php", "dest": "/check_stock.php" },
+      { "src": "/add_product.php", "dest": "/add_product.php" },
+      { "src": "/dashboard.php", "dest": "/dashboard.php" },
+      { "src": "/(.*)", "dest": "/dashboard.php" },
+      { "src": "/authenticate.php", "dest": "/authenticate.php" },
+      { "src": "/deconnexion.php", "dest": "/deconnexion.php" },
+      { "src": "/login.php", "dest": "/login.php" },
+      { "src": "/logout.php", "dest": "/logout.php" },
+      { "src": "/register.php", "dest": "/register.php" },
+      { "src": "remove_product.php", "dest": "/remove_product.php" }
+    ],
+    "functions": {
+      "dashboard.php": {
+        "runtime": "vercel-php@0.4.0"
+      },
+      "check_stock.php": {
+        "runtime": "vercel-php@0.4.0"
+      },
+      "authenticate.php": {
+        "runtime": "vercel-php@0.4.0"
+      },
+      "add_product.php": {
+        "runtime": "vercel-php@0.4.0"
+      },
+      "remove_product.php": {
+        "runtime": "vercel-php@0.4.0"
+      },
+      "register.php": {
+        "runtime": "vercel-php@0.4.0"
+      },
+      "login.php": {
+        "runtime": "vercel-php@0.4.0"
+      },
+      "deconnexion.php": {
+        "runtime": "vercel-php@0.4.0"
+      },
+      "logout.php": {
+        "runtime": "vercel-php@0.4.0"
+      }
+    }
+  }
